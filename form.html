@@ -1,0 +1,87 @@
+<!-- form.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form</title>
+</head>
+<body>
+    <center>
+
+        <h1 style="color:ghostwhite;">FORM VALIDATION</h1>
+        <div class="form-box">
+        <form >
+        <table>
+            <tr>
+                <td><label for="fname">Firstname</label></td>
+                <td>
+                    <input type="text" id="fname" name="fname" required>
+                    <p class="error" id="fname-error"></p>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="lname">Lastname</label></td>
+                <td>
+                    <input type="text" id="lname" name="lname" required>
+                    <p class="error" id="lname-error"></p>
+                </td>
+                
+            </tr>
+            <tr>
+                <td><label for="email">E-mail Address</label></td>
+                <td>
+                    <input type="email" id="email" name="email" required>
+                    <p class="error" id="email-error"></p>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="mobile">Mobile Number</label></td>
+                <td>
+                    <input type="number" id="mobile" name="mobile" required>
+                    <p class="error" id="mobile-error"></p>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="gender">Gender</label></td>
+                <td>
+                    <input type="radio" name="gender" id="male">Male
+                    <input type="radio" name="gender" id="female">Female
+                    <p class="error" id="gender-error"></p>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="address">Address</label></td>
+                <td>
+                <textarea name="address" id="address" cols="30" rows="3" required></textarea>
+                <p class="error" id="address-error"></p>
+            </td>
+            </tr>
+            </tr>
+                <td><label for="pass">Password</label></td>
+                <td>
+                    <input type="password" id="pass" name="pass">
+                    <p class="error" id="password-error"></p>
+                    
+                </td>
+                
+            </tr>
+            <tr>
+                <td><label for="cpass">Confirm Password</label></td>
+                <td>
+                    <input type="password" id="cpass" name="cpass">
+                    <p class="error" id="cpassword-error"></p>
+                </td>
+            </tr>
+            <tr >
+            <td colspan="2"> <center><button type="button" onclick="validate(event)">Submit</button></center></td>
+            </tr>
+        </table>
+            </form>
+        </div>
+    <script src="validate.js"></script>
+    </center>
+</body>
+</html>

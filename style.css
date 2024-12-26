@@ -1,0 +1,35 @@
+/* style.css */
+
+.form-box{
+    color:black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    background:lavender;
+    padding: 40px;
+    margin-left: 400px;
+    margin-right: 400px;
+    border-radius: 15px;
+}
+
+.error{
+    color: red;
+    font-size: x-small;
+    font-style: italic;
+}
+
+body{
+    background-color:rgb(60, 131, 131);
+    
+}
+button {
+    background-color: crimson;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+button:hover{
+    background-color:red;
+}
